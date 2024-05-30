@@ -15,7 +15,18 @@
     top: -100px;
     z-index: 1000;
     //text-shadow: 0 3px 0 rgba(0,0, 0, 0.15);
+
+    @media (max-width: 900px) {
+      top: -45px;
+      font-size: 80px !important;
+    }
   }
+
+.aboutTitleCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 .content {
   display: flex;
@@ -30,6 +41,19 @@
   // backdrop-filter: blur(4px); // Blur effect
   // border-radius: 30px; // Rounded corners for the background
   // z-index: 2;
+
+  @media (max-width: 1400px) {
+    margin-left: -3rem;
+    margin-right: 0rem;
+  }
+
+  @media (max-width: 900px) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
 }
 
 
@@ -39,6 +63,17 @@
   height: auto; /* Maintain aspect ratio */
   margin-left: 4rem;
   z-index: 200;
+
+  max-height: 400px;
+  object-fit: contain;
+
+  @media (max-width: 900px) {
+    margin-top: 1rem;
+    gap: 1rem;
+    margin-left: 0rem;
+    width: 85vw;
+    flex-direction: column;
+  }
 }
   
 .blurb {
@@ -46,6 +81,15 @@
   color: rgb(255, 255, 255);
   margin-right: 4rem;
   z-index: 200;
+
+  @media (max-width: 900px) {
+    margin-top: 1rem;
+    gap: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 85vw;
+    justify-items: center;
+  }
 }
 
 .hi {
@@ -60,11 +104,15 @@
   right: 0;
   width: 80%; // Take up half of the container width
   height: 71%; // Full height of the container
-  background-color: #e4e4e43e; // Semi-transparent white
+  background-color: #d4d4d43e; // Semi-transparent white
   z-index: 1; // Lower z-index than content but above everything else
   backdrop-filter: blur(5px);
   border-radius: 0px 0 0 0px ;
   // box-shadow: -10px 0 15px rgba(0, 0, 0, 0.041);
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .resumeDownload {

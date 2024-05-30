@@ -11,7 +11,7 @@ function App() {
       // Create trail text element
       const trailText = document.createElement('div');
       trailText.classList.add('trail-text');
-      trailText.textContent = '●'; // Your desired trail text or emoji
+      trailText.textContent = '⋆'; // Your desired trail text or emoji
       document.body.appendChild(trailText);
 
       // Correct the position for the scroll offset
@@ -45,7 +45,7 @@ function App() {
             </div> 
           </marquee>
 
-          <marquee className="marq2" direction="" loop="" behavior="alternate" scrollamount="32"> 
+          <marquee className="marq2" direction="" loop="" behavior="alternate" scrollamount="15"> 
             <div className="words"> 
               ECONOMIST. DATA SCIENTIST. DEVELOPER. DESIGNER.
             </div> 

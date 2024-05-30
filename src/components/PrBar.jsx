@@ -22,7 +22,7 @@ function PrBar() {
       </div>
       <div className={styles.navItemsRight}>
       <button onClick={handleResumeClick} className={styles.resume}>RESUME</button>
-        <button className={styles.contact} onClick={() => scrollToSection('contact')}>CONTACT ME</button>
+        <button className={styles.contact} onClick={() => scrollToSection('contact')}>CONTACT</button>
       </div>
       </div>
     </nav>

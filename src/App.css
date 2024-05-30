@@ -1,11 +1,18 @@
 #about {
-  overflow: hidden; /* Ensures no scrolling within the section itself */
-  background-image: url('./assets/texture.svg'); /* Path to your background image */
-  background-attachment: fixed; /* Key for parallax effect */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents repeating the background */
-  background-size: cover; /* Cover the entire section */
+  overflow: hidden;
+  /* Ensures no scrolling within the section itself */
+  background-image: url('./assets/texture.svg');
+  /* Path to your background image */
+  background-attachment: fixed;
+  /* Key for parallax effect */
+  background-position: center;
+  /* Centers the background image */
+  background-repeat: no-repeat;
+  /* Prevents repeating the background */
+  background-size: cover;
+  /* Cover the entire section */
 }
+
 #about::before {
   content: '';
   position: absolute;
@@ -13,14 +20,21 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(26, 19, 26, 0.078); /* Dark overlay; adjust opacity as needed */
+  background: rgba(26, 19, 26, 0.078);
+  /* Dark overlay; adjust opacity as needed */
   z-index: 1;
 }
 
 
 .imgcontainer {
   position: relative;
-  width: 100%; /* or the width you want */
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
 }
 
 .SophiaPinkStar {
@@ -30,7 +44,7 @@
 
 }
 
-.marq1{
+.marq1 {
   position: absolute;
   bottom: 33vw;
   left: 0;
@@ -38,9 +52,13 @@
   z-index: 9;
   font-size: 2rem;
   font-weight: 450;
-} 
 
-.marq2{
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.marq2 {
   position: absolute;
   bottom: 10vw;
   left: 0;
@@ -48,9 +66,15 @@
   z-index: 9;
   font-size: 2rem;
   font-weight: 440;
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    left: -50vw;
+    right: -50vw;
+  }
 }
 
-.marq3{
+.marq3 {
   position: absolute;
   bottom: 7vw;
   left: 0;
@@ -58,28 +82,43 @@
   z-index: 9;
   font-size: 2rem;
   font-weight: 450;
-} 
+}
 
 
 
 .lineAfterNav {
   position: absolute;
-  height: 1px; /* Set the thickness of the line */
-  background-color: rgba(0, 0, 0, 0.622); /* Set the color of the line */
-  width: 94%; /* Set the width of the line */
-  margin-top: 8vh; /* Space between the navbar and the line */
-  left: 3%; /* Center the line (100% - 90% width) / 2 */
-  right: 3%; /* Center the line (100% - 90% width) / 2 */
+  height: 1px;
+  /* Set the thickness of the line */
+  background-color: rgba(0, 0, 0, 0.622);
+  /* Set the color of the line */
+  width: calc(100% - 60px);
+  margin-left: 30px;
+  /* Set the width of the line */
+  margin-top: 8vh;
+  /* Space between the navbar and the line */
+  /* Center the line (100% - 90% width) / 2 */
+  /* Center the line (100% - 90% width) / 2 */
+
+    @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .lineAfterHead {
   position: absolute;
-  height: 1px; /* Set the thickness of the line */
-  background-color: rgba(0, 0, 0, 0.622); /* Set the color of the line */
-  width: 94%; /* Set the width of the line */
-  margin-top: 76.7vh; /* Space between the navbar and the line */
-  left: 3%; /* Center the line (100% - 90% width) / 2 */
-  right: 3%; /* Center the line (100% - 90% width) / 2 */
+  height: 1px;
+  /* Set the thickness of the line */
+  background-color: rgba(0, 0, 0, 0.622);
+  /* Set the color of the line */
+  width: 94%;
+  /* Set the width of the line */
+  margin-top: 76.7vh;
+  /* Space between the navbar and the line */
+  left: 3%;
+  /* Center the line (100% - 90% width) / 2 */
+  right: 3%;
+  /* Center the line (100% - 90% width) / 2 */
 }
 
 body {
@@ -91,8 +130,12 @@ body {
   pointer-events: none;
   opacity: 1;
 
-  z-index: 10000; /* Make sure this is above other elements */
-  color: rgba(248, 204, 213, 0.534); /* Choose the color of the text */
-  font-size: 20px; /* Choose the size of the text */
-  user-select: none; /* Prevents text from being selected */
+  z-index: 10000;
+  /* Make sure this is above other elements */
+  color: rgba(248, 204, 213, 0.534);
+  /* Choose the color of the text */
+  font-size: 20px;
+  /* Choose the size of the text */
+  user-select: none;
+  /* Prevents text from being selected */
 }

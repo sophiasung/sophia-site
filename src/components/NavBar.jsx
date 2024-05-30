@@ -16,15 +16,15 @@ function NavBar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navItems}>
-      <div className={styles.navItemsLeft}>
-      <button className={styles.home} onClick={() => scrollToSection('home')}>SS<sup>TM</sup></button>
-        <button className={styles.about} onClick={() => scrollToSection('about')}>ABOUT</button>
-        <button className={styles.projects} onClick={() => scrollToSection('projects')}>PROJECTS</button>
-      </div>
-      <div className={styles.navItemsRight}>
-      <button onClick={handleResumeClick} className={styles.resume}>RESUME</button>
-        <button className={styles.contact} onClick={() => scrollToSection('contact')}>CONTACT ME</button>
-      </div>
+        <div className={styles.navItemsLeft}>
+          <button className={styles.home} onClick={() => scrollToSection('home')}>SS<sup>TM</sup></button>
+          <button className={styles.about} onClick={() => scrollToSection('about')}>ABOUT</button>
+          <button className={styles.projects} onClick={() => scrollToSection('projects')}>PROJECTS</button>
+        </div>
+        <div className={styles.navItemsRight}>
+          <button onClick={handleResumeClick} className={styles.resume}>RESUME</button>
+          <button className={styles.contact} onClick={() => scrollToSection('contact')}>CONTACT</button>
+        </div>
       </div>
     </nav>
   );

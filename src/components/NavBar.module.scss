@@ -8,6 +8,10 @@
   padding: 5px 20px;
   box-sizing: border-box;
   z-index: 1000;
+
+  // @media (max-width: 500px) {
+  //   display: none;
+  // }
 }
 
 .navItems {
@@ -36,12 +40,15 @@ button {
   border: none;
   cursor: pointer;
   padding: 10px;
-  font-size: 1.15rem;
+  font-size: 1.15rem !important;
   font-weight: 500;
   font-family: 'Helvetica';
-  margin: 0 10px; /* This will give space between buttons */
-}
+  margin: 0 20px; /* This will give space between buttons */
 
+  @media (max-width: 500px) {
+    font-size: 1rem !important;
+  }
+}
 
 .home {
   margin-left: 15px;
@@ -50,6 +57,18 @@ button {
 
 .contact {
   margin-right: 15px;
+}
+
+.projects {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.about {
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 sup {

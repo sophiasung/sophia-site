@@ -10,14 +10,14 @@ function About({ id }) {
   return (
     <div id={id} className={styles.wrapper}>
       <div className={styles.background}></div>
-      <h1 className={styles.title}>About. About. About. About. About. About.</h1>
+      <div className={styles.aboutTitleCenter}>
+        <h1 className={styles.title}>About. About. About. About. About. About. About.</h1>
+      </div>
       <div className={styles.content}>
         <img className={styles.sophiapic} src={image} alt="Picture of Me" />
         <p className={styles.blurb}>
           <p className={styles.hi}>Hi, I'm Sophia! </p>
           I'm currently a junior at UC Berkeley majoring in Economics and minoring in Data Science. In addition to my academic pursuits, I'm deeply involved in web design and development.
-
-          
           <br></br>
           <br></br>
           I'm originally from the suburbs of Chicago, but I now reside in the Bay Area.
