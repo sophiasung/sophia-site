@@ -1,0 +1,24 @@
+.wrapper {
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+
+.title {
+    font-size: 3rem; 
+    font-weight: 400; 
+    position: relative;
+    text-align: center; 
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.line {
+  position: relative;
+  height: 1px; 
+  background-color: rgba(0, 0, 0, 0.622); 
+  width: 94%;
+  margin-top: .8vh; 
+  left: 3%;
+  right: 3%; 
+}

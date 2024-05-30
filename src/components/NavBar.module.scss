@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navItems {
+  display: flex;
+  margin-top: 1vh;
+  justify-content: space-between;
+  width: 100%; /* This will make sure the left and right groups are at the ends */
+}
+
+.navItemsLeft, .navItemsRight {
+  display: flex;
+  align-items: center;
+}
+
+.navItemsLeft {
+  justify-content: flex-start;
+}
+
+.navItemsRight {
+  justify-content: flex-end;
+}
+
+button {
+  background: none;
+  color: rgb(63, 63, 63);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-family: 'Helvetica';
+  margin: 0 10px; /* This will give space between buttons */
+}
+
+
+.home {
+  margin-left: 15px;
+  font-weight: 1000 !important;
+}
+
+.contact {
+  margin-right: 15px;
+}
+
+sup {
+  font-size: .75rem !important;
+}

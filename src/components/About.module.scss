@@ -1,0 +1,83 @@
+// About.module.scss
+.wrapper {
+    position: relative;
+    overflow: hidden; // Ensures nothing spills out of the wrapper
+  }
+  
+.title {
+    font-size: 200px;
+    margin: 0;
+    text-align: center;
+    color: #FBFAFB;
+    white-space: nowrap; // Ensures the text stays on one line
+    display: inline-block;
+    position: absolute;
+    top: -100px;
+    z-index: 1000;
+    //text-shadow: 0 3px 0 rgba(0,0, 0, 0.15);
+  }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  gap: 3rem;
+  padding: 3rem; 
+  // background-color: rgba(251, 250, 251, 0.533); // Semi-transparent background
+  // backdrop-filter: blur(4px); // Blur effect
+  // border-radius: 30px; // Rounded corners for the background
+  // z-index: 2;
+}
+
+
+.sophiapic {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 25rem; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 4rem;
+  z-index: 200;
+}
+  
+.blurb {
+  font-size: 20px; /* Adjust font-size as needed */
+  color: rgb(255, 255, 255);
+  margin-right: 4rem;
+  z-index: 200;
+}
+
+.hi {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.background {
+  position: absolute;
+  top: 20%; // Center vertically
+  right: 0;
+  width: 80%; // Take up half of the container width
+  height: 71%; // Full height of the container
+  background-color: #e4e4e43e; // Semi-transparent white
+  z-index: 1; // Lower z-index than content but above everything else
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0 0 0px ;
+  // box-shadow: -10px 0 15px rgba(0, 0, 0, 0.041);
+}
+
+.resumeDownload {
+    text-align: center; /* Center the download link */
+    padding: 2rem 0; /* Add some padding at the top and bottom */
+  
+    a {
+      font-size: 1rem; /* Adjust the font size as needed */
+      color: #000000; /* Adjust the color as needed */
+      text-decoration: none; /* Optional: removes the underline */
+  
+      &:hover {
+        text-decoration: underline; /* Optional: adds underline on hover */
+      }
+    }
+  }
